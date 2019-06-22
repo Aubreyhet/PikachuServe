@@ -15,13 +15,6 @@ const Profile = require("../../modules/Profile");
 router.use(bodyParser.urlencoded({extended : false}));
 router.use(bodyParser.json());
 
-
-
-
-
-
-
-
 router.get('/test', (req, res) => {
     res.json({msg:"Profile"})
 })

@@ -8,4 +8,3 @@
     - 获取单个信息 api/profiles/:id
     - 编辑信息  api/profiles/edit/:id
     - 删除数据  api/profiles/delete/:id
-# 
