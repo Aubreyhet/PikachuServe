@@ -75,12 +75,12 @@ router.post("/login",(req,res) =>{
                         if(isMath){
                             //规则 加密名 过期时间 箭头函数
                             const rule = {id:user.id,name:user.name}
-                            jwt.sign(rule, secretOrKey,{expiresIn:3600}, (err, tonken) => 
+                            jwt.sign(rule, secretOrKey,{expiresIn:3600}, (err, token) => 
                             {
                                 if(err) throw err;
                                 res.json({
                                     success:true,
-                                    tonken:"Bearer " + tonken
+                                    token:"Bearer " + token
                                 });
                             })
                         }else{
