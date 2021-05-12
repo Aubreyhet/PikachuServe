@@ -29,6 +29,8 @@ app.use(bodyParser.json())
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var friendRouter = require('./routes/friend');
+var msgRouter = require('./routes/msgInfo');
 
 
 
@@ -43,6 +45,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/friend', friendRouter);
+app.use('/msg', msgRouter);
 
 
 server.listen('3000')

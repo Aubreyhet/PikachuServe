@@ -1,11 +1,8 @@
+//消息相关路由模块
+
 var express = require('express');
 var router = express.Router();
-var userInfo = require('../controllers/userInfoContro')
+var userInfo = require('../controllers/msgContro')
 
-/* GET home page. */
-router.get('/', userInfo.getUserAll);
-router.post('/userSignUp', userInfo.signUp);
-router.post('/userlogin', userInfo.userLogin);
-router.post('/findUserName', userInfo.findName);
 
 module.exports = router;
