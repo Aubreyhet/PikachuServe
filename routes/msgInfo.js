@@ -4,7 +4,9 @@ let msgInfo = require('../controllers/msgContro');
 
 router.get('/getMsgList', msgInfo.getMsgList)
 router.get('/getFirendMsg', msgInfo.getFirendMsg)
-router.post('/sendMsg', msgInfo.sendMsg)
+router.post('/sendMsgImg', msgInfo.sendMsgImg)
+router.post('/sendMsgFile', msgInfo.sendMsgFile)
+router.post('/sendMsgOther', msgInfo.sendMsgOther)
 
 
 module.exports = router
